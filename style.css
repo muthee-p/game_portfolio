@@ -1,0 +1,256 @@
+body {
+    font-family: 'Merriweather', serif; /* Editorial-inspired font */
+    background-color: #ffffff;
+    color: #333333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    text-align: left;
+    color: #000000;
+    font-family: 'Playfair Display', serif; /* Another editorial-inspired font */
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+header {
+    background-color: #f8f8f8;
+    color: #333333;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #dddddd;
+}
+
+header a {
+    color: #333333;
+    text-decoration: none;
+    padding: 0 15px;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
+
+header a:hover {
+    border-bottom: 2px solid #000000;
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: #ffffff;
+}
+
+.header {
+    width: 850px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.intro {
+    width: 100%;
+    padding: 0 20px;
+    border-left: 5px solid #000000;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+}
+
+.work {
+    width: 850px;
+    margin-bottom: 40px;
+    padding: 20px;
+    border-bottom: 2px solid #dddddd;
+}
+
+.project {
+    width: 850px;
+    margin-bottom: 40px;
+    padding: 20px;
+    border-bottom: 2px solid #dddddd;
+}
+
+.video {
+    margin-bottom: 20px;
+}
+
+.vids {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: #333333;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px 0;
+    background-color: #f8f8f8;
+    color: #333333;
+    border-top: 1px solid #dddddd;
+}
+
+@media (max-width: 768px) {
+    .intro {
+        border-left: none;
+        border-top: 5px solid #000000;
+        padding-top: 20px;
+    }
+
+    .project, .work {
+        width: 100%;
+    }
+}
+
+/* 
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+   
+}
+
+h2{
+    
+    text-align: center;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+.head{
+    display: flex;
+   justify-content: center;
+}
+.header{
+    width:850px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img{
+    width: 30%;
+}
+img{
+    width: 200px;
+    border-radius: 25%;
+}
+.intro{
+    width:70%;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.main-container{
+	width: 80%;
+}
+ 
+.work {
+    width: 650px;
+}
+.project {
+    width: 450px;
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+.project-cont {
+    width: 650px;
+    margin: 20px;
+    padding: 15px;
+    
+}
+
+.video {
+    margin-bottom: 10px;
+}
+.vids {
+    width: 100%;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.read-more:hover {
+    background-color: #555;
+}
+
+
+article {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #333;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .project {
+        width: 100%;
+    }
+
+    article {
+        padding: 10px;
+    }
+}  */
