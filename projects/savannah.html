@@ -9,8 +9,10 @@
 </head>
 <body>
 
-    <header>
+    <header class="header2">
         <h1>Mosquito Savannah</h1>
+        <p><b>Date: </b>April-May 2024</p>
+        <p><b>Duration: </b>Over 200hrs</p>
         <a href="../index.html" class="read-more">Home</a>
     </header>
     <main > 
@@ -21,8 +23,85 @@
                     Your browser does not support the video tag.
                 </video>
             </div>
-            <p>In the game, the player's goal is to help reduce Malaria in a nearby village. They test different ponds for mosquito larvae and make larvicide from plants they find. 
-                They also gather plants to make Malaria medicine. Finally, they use a robot to deliver the medicine to the village. Thus reducing Malaria</p>
+            <p>In the game, the player's goal is to help reduce Malaria in a nearby village. 
+                They test different ponds for mosquito larvae and make larvicide from plants they find. </p>
+            <p>They also gather plants to make Malaria medicine. Finally, they use a robot to deliver the medicine to the village. Thus reducing Malaria</p>
+            <p><b>Fun Fact: </b>the character swimming is actually the in air animation,which is triggered when the player is off the ground. The script raises the player a little when they collide with a plane inside the ponds.</p>
+            <h3>Mechanics:</h3>
+            <p>The Character is from the Unity Asset Store from the package, Starter Asset Pack</p>
+            <p>The cart follows the character around serving as a carrier and lights the character's way at night.</p>
+                <p>It uses the Nav mesh AI</p>
+            <p>There is a day and night system, where when it gets to dusks the lights including those on the cart light up</p>
+            <p>Mosquitos are in form of a particle system that only plays when the player is closeby</p>
+            <p> The Pond and station markers look at the player using the "look at" component to allow legibility</p>
+
+            <h3>Steps taken to Increase fps(frames per second)</h3>
+
+            <li>Qulity settings are set to High quality, instead of ultra high</li>
+            <li>Camera culling on static objects.</li>
+            <li>Some textures and meshes are compressed.</li>
+            <li>Used a unity asset that reduces LOD(levelof detail in plants). </li>
+            <li>Used Baked lights. </li>
+            <li>Use LookAt Constraint component for makers to facetheplayer instead of a script. </li>
+            <li>Moved the sky calculations to a coroutine instead of the update(). </li>
+            <li>In place of Canvas where nothing changes eg. the station markers, i used sprites with the words and images on them. </li>
+            <li>Particle systems have a trigger script that plays them when the player is near and stops when the player is away. </li>
+            <li>Avoided the use of mesh colliders and opted for built in mesh like cubes n spheres coliders. </li>
+            
+            <h3>Responsibilities:</h3>
+            <h2>1. Game Design</h2>
+            <ul>
+                <li>Concept development</li>
+                <li>Storyline and narrative creation</li>
+                <li>Gameplay mechanics and rules</li>
+                <li>Level design</li>
+            </ul>
+        
+            <h2>2. Project Management</h2>
+            <ul>
+                <li>Planning and scheduling</li>
+                <li>Task management</li>
+                <li>Milestone tracking</li>
+            </ul>
+        
+            <h2>3. Programming</h2>
+            <ul>
+                <li>Game logic implementation</li>
+                <li>User interface (UI) development</li>
+                <li>Input handling</li>
+                <li>Physics and collision detection</li>
+                <li>AI Integration</li>
+                <li>Debugging and optimization</li>
+            </ul>
+        
+            <h2>4. Art and Animation</h2>
+            <ul>
+                <li>2D/3D asset creation (characters, environments, objects)</li>
+                <li>Texturing</li>
+                <li>Visual effects (VFX)</li>
+            </ul>
+        
+            <h2>5. Audio Design</h2>
+            <ul>
+                <li>Sound effect Music sourcing</li>
+            </ul>
+
+            <h2>6. User Experience (UX) Design</h2>
+            <ul>
+                <li>User interface (UI) design</li>
+                <li>User experience testing and iteration</li>
+                <li>Accessibility considerations</li>
+            </ul>
+        
+            <h2>7. Quality Assurance (QA)</h2>
+            <ul>
+                <li>Playtesting</li>
+                <li>Bug identification</li>
+                <li>Performance testing</li>
+                <li>Compatibility testing</li>
+            </ul>
+
+            <h3>Platforms:</h3>Web
             <div class="links">
                 <a href="https://muthee-p.itch.io/mosquito-savannah" class="read-more">Play</a>
                 <a href="https://github.com/muthee-p/Mosquito_savannah" class="read-more">Github</a>

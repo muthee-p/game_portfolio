@@ -9,8 +9,10 @@
 </head>
 <body>
 
-    <header>
+    <header class="header2">
         <h1>Slimy Runner</h1>
+        <p><b>Date: </b>May 2024</p>
+        <p><b>Duration: </b>14 Days</p>
         <a href="../index.html" class="read-more">Home</a>
     </header>
     <main > 
@@ -21,11 +23,90 @@
                     Your browser does not support the video tag.
                 </video>
             </div>
-            <p>In this exhilarating runner game, players dash through four uniquely themed environments: silent cottages with streetlights, the serene forest filled with lush greenery and sheep, the treacherous desert with its scorching sun and sandy mountains, and the icy tundra featuring frosty paths.
+            <p>In this exhilarating runner game, players dash through four uniquely themed environments: silent cottages with streetlights, the serene forest filled with lush greenery and sheep, the treacherous desert with its scorching sun and sandy mountains, and the icy tundra featuring frosty paths.</p>
 
-                Each environment offers distinct challenges and obstacles, ensuring a dynamic and engaging experience as players race to achieve the highest scores and unlock new levels.
-                
-                </p>
+            <p>Each environment offers distinct challenges and obstacles, ensuring a dynamic and engaging experience as players race to achieve the highest scores and unlock new levels.</p>
+            <h3>Mechanics</h3>
+
+            <p><b>1. Movement and Speed Adjustment Base Speed and Speed Modifier:</b> The player's movement speed is determined by a base speed (8 units) plus a speed modifier. The speed modifier can be adjusted dynamically during gameplay.
+
+            </p><p><b>2. Speed Reduction on Collision:</b> The player's speed decreases by 1 unit when colliding with obstacles, but it cannot go below a minimum speed (e.g., 4 units).
+
+            </p><p><b>3. Jump Mechanics Ground Check:</b> Uses raycasting to determine if the player is grounded. Jump Buffer: Allows jumping even if the jump button was pressed slightly before the player landed. Multiple Jumps: Players can perform additional jumps (e.g., double jumps) while in the air.
+
+            </p><p><b>5. Collision Handling Obstacle Collisions:</b> Reduces the player's speed and plays specific sound effects depending on the type of obstacle. Platform Collisions: Increases the player's speed temporarily. Enemy Collisions: Ends the game and plays a specific sound effect.
+
+            </p><p><b>6. Saving and Loading Progress PlayerPrefs:</b> Stores the player's checkpoint, total distance traveled, number of takes, and speed modifier for persistence between sessions.
+
+            </p><p><b>7. Game Over and Restart Game Over Handling:</b> Triggers when the player loses all lives or hits a wall. Displays game over UI and stops movement. Restarting: Resets the player's position and speed, allowing them to continue from the last checkpoint or start from the beginning.
+
+            </p><h4>Enemy Summary</h4>
+
+            <p><b>1. Player Detection and Following Line of Sight:</b> The enemy detects the player if the player is within a specified distance (lineOfSight). Follow Range: The enemy will follow the player if the player's x-position is between startFollow and endFollow. Flying Height: The enemy maintains a specific height (flyingHeight) while moving.
+
+            </p><p><b>2. Movement Speed:</b> The enemy moves towards the player at a base speed, which can be increased temporarily. Acceleration: The enemy's movement is smooth due to acceleration over a specified time (accelerationTime). Ground Check: Ensures that the enemy is grounded using raycasting.
+
+            </p><p><b>3. Attacking Attack Zone:</b> If the player enters the attack zone, the enemy initiates an attack. Attack Animation: Triggers the attacking animation when the enemy starts attacking. Attack Time: Controls the duration of the attack.
+
+            </p><p><b>4. Collisions Obstacle Collisions:</b> The enemy temporarily disables the collider of any obstacle it collides with and re-enables it after a delay.</p>
+
+            <h3>Responsibilities:</h3>
+            <h4>1. Game Design</h4>
+            <ul>
+                <li>Concept development</li>
+                <li>Storyline and narrative creation</li>
+                <li>Gameplay mechanics and rules</li>
+                <li>Level design</li>
+            </ul>
+        
+            <h4>2. Project Management</h4>
+            <ul>
+                <li>Planning and scheduling</li>
+                <li>Task management</li>
+                <li>Milestone tracking</li>
+            </ul>
+        
+            <h4>3. Programming</h4>
+            <ul>
+                <li>Game logic implementation</li>
+                <li>User interface (UI) development</li>
+                <li>Input handling</li>
+                <li>Physics and collision detection</li>
+                <li>AI development</li>
+                <li>Debugging and optimization</li>
+            </ul>
+        
+            <h4>4. Art and Animation</h4>
+            <ul>
+                <li>2D and 3D asset sourcing (characters, environments, objects)</li>
+                <li>Texturing</li>
+                <li>Animation</li>
+            </ul>
+        
+            <h4>5. Audio Design</h4>
+            <ul>
+                <li>Sound effect & Background music sourcing</li>
+                <li>Audio integration and mixing</li>
+            </ul>
+        
+            <h4>6. User Experience (UX) Design</h4>
+            <ul>
+                <li>User interface (UI) design</li>
+                <li>User experience testing and iteration</li>
+                <li>Accessibility considerations</li>
+            </ul>
+        
+            <h4>7. Quality Assurance (QA)</h4>
+            <ul>
+                <li>Playtesting</li>
+                <li>Bug identification</li>
+                <li>Performance testing</li>
+                <li>Compatibility testing</li>
+            </ul>
+
+            <h3>Platforms:</h3>Web & Mobile(Android)
+
+
             <div class="links">
                 
                 <a href="https://muthee-p.itch.io/slimy-runner" class="read-more">Play</a>
@@ -33,9 +114,7 @@
             </div>
         </section>
     </main>
-    <header>
-        <a href="../index.html" class="read-more">Home</a>
-    </header>
+ 
     <footer>
         <p>© 2024 Prue's Games. All rights reserved.</p>
     </footer>
