@@ -39,7 +39,7 @@ header a:hover {
 .head {
     display: flex;
     justify-content: center;
-    padding: 40px 20px;
+    padding: 20px 10px;
     background-color: #ffffff;
 }
 
@@ -55,8 +55,12 @@ header a:hover {
     width: 100%;
     margin-bottom: 20px;
 }
+.small-img{
+    width: 250px;
+    margin: 4px 4px 0 4px;
+}
 
-img {
+.profile {
     width: 200px;
     border-radius: 50%;
 }
@@ -74,6 +78,11 @@ main {
     padding: 40px 20px;
     background-color: #f8f8f8;
 }
+.main-second{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 .work {
     width: 850px;
@@ -84,9 +93,16 @@ main {
 
 .project {
     width: 850px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     padding: 20px;
     border-bottom: 2px solid #dddddd;
+}
+
+.second{
+    width: 550px;
+}
+.third{
+    width: 350px;
 }
 
 .video {
@@ -122,10 +138,13 @@ footer {
     border-top: 1px solid #dddddd;
 }
 .header2{
+    padding-left: 4px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
+
 
 @media (max-width: 768px) {
     .intro {
@@ -138,7 +157,9 @@ footer {
         width: 100%;
     }
 }
-
+.image-section{
+    align-items:flex-start;
+}
 /* 
 
 body {
