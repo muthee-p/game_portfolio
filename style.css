@@ -107,6 +107,9 @@ main {
 
 .video {
     margin-bottom: 20px;
+    min-height: 500px;
+    display: flex;
+    justify-items: center;
 }
 
 .vids {
