@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,177 +9,371 @@
     <title>Prue's Games</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="head">
-        <div class="header">
-        <div class="img">
-            <img src="media/profile.png" alt="Profile Photo" class="profile">
-        </div>
-        <div class="intro">
-            <h1>Prudence N. Muthee</h1>
-            <p>I am a Unity C# game developer with a degree in Computer Science. I began my career in front-end web development before seizing the opportunity to venture into game development, specifically programming. This transition has fueled my passion for making all kinds of games, whether for entertainment, education or to tell a story. I am very grateful to be part of such an incredible and fast-growing industry.</p>     
-            <h4>My Programming Langunges:</h4>C#, Javascript
-            <h4>Tools & Frameworks</h4>Unity, AWS</p>
-        </div>
-    </div>
-    </div>
-    
-    <header>
-        <a href="https://muthee-p.itch.io/" class="read-more">Itch.io</a>
-        <a href="https://github.com/muthee-p" class="read-more">Github</a>
-        <a href="https://muthee-p.vercel.app" class="read-more">Web Portfolio</a>
-        <a href="https://ke.linkedin.com/in/muthee-p" class="read-more">LinkedIn</a>
-        <a href="https://tiktok.com/@muthee_p" class="read-more">Tiktok</a>
-    </header>
 
-    <div class="head">
-        <div class="work">
-            <h2>Main Projects</h2>
-            <p> These are games where my role was significant, contributing to and developing at least 70% of the overall content and functionality. This includes designing game mechanics, programming core features, and implementing various aspects of gameplay and user experience.</p>
+<!-- ===== Navigation Section ==================================================== -->
+<nav>
+    <a href="#" class="nav-logo">田中 幸</a>
+    <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- ===== Hero Section ==================================================== -->
+
+<section class="hero">
+    <div class="hero-sidebar">
+        <span class="jp-vertical">デザイナー・開発者</span>
+        <div style="width:1px; flex:1; background: linear-gradient(to bottom, var(--stone), transparent);"></div>
+        <span class="jp-vertical" style="font-size:9px; letter-spacing:0.3em; color: var(--stone);">2 0 2 4</span>
+    </div>
+
+    <div class="hero-content">
+        <div class="hero-eyebrow">
+            <span>Game Programmer</span>
+        </div>
+        <h1 class="hero-name">
+            Prudence<br>Muthee
+            <span class="jp-sub">田中 幸 — Portfolio</span>
+        </h1>
+        <p class="hero-tagline">
+            Crafting digital experiences with the precision of <em>shokunin</em> craftsmanship — where clean code
+            meets considered design.
+        </p>
+        <div class="hero-cta">
+            <a href="#work" class="btn-primary"><span>View Work</span></a>
+            <a href="#contact" class="btn-ghost">Get in touch →</a>
+        </div>
+        <div class="brush-line"></div>
+    </div>
+
+    <div class="hero-visual">
+        <div class="hero-circle-container">
+            <div class="circle-outer"></div>
+            <div class="circle-mid"></div>
+            <div class="circle-inner">
+                <span class="circle-kanji">道</span>
+                <div class="circle-role">
+                    Design<br>
+                    <span style="color: var(--vermillion); font-size: 10px; letter-spacing: 0.3em;">✦</span><br>
+                    Code
+                </div>
+            </div>
         </div>
     </div>
-    
-    <main>
 
-        <section class="project">
-            <h2>Lucid Maze</h2>
-            <div class="video">
+    <div class="scroll-indicator" style="left: calc(80px / 2 + 10px)">
+        <div class="scroll-line"></div>
+    </div>
+</section>
+
+<!-- About -->
+<section class="section" id="about">
+    <div class="section-header revea">
+        <span class="section-number">01</span>
+        <div class="section-divider"></div>
+        <h2 class="section-title">About</h2>
+        <span class="section-title-jp">について</span>
+    </div>
+
+    <div class="about-grid">
+        <div class="about-text revea reveal-delay-1">
+            <p>I’m a gameplay programmer and developer focused on building interactive systems that feel intuitive,
+                responsive, and purposeful. My work spans Unity and C#, where I design mechanics, state-driven systems,
+                and connected gameplay experiences, as well as web technologies and HTML5 frameworks like Phaser.
+                I’m drawn to the space where structure meets play—where systems quietly support the experience without
+                getting in the way of it.</p>
+            <p>I’m drawn to systems that feel effortless to the player. The kind where logic is complex behind the
+                scenes, but the experience
+                remains <strong>simple and intuitive.</strong> Whether it’s managing transitions between game states,
+                refining moment-to-moment interactions,
+                or optimizing performance, I focus on creating experiences that feel cohesive, responsive, and
+                intentional.</p>
+            <p>Currently open to full-time roles and select freelance collaborations.</p>
+        </div>
+
+        <div class="about-stats revea reveal-delay-2">
+            <img src="media/profile.png" alt="Profile Photo" class="stat-item">
+        </div>
+    </div>
+</section>
+<!-- ====================================== PROJECTS ==========================================-->
+
+<!-- <section class="section" id="projects"> -->
+<!-- floating figure -->
+<!-- <svg class="sec-figure" width="90" height="180" viewBox="0 0 90 180" fill="none">
+                <circle cx="45" cy="12" r="9" stroke="#0e0e0e" stroke-width="1.5" fill="none" />
+                <path d="M45 21 L45 75" stroke="#0e0e0e" stroke-width="1.5" stroke-linecap="round" />
+                <path d="M45 40 L20 65 M45 40 L70 55" stroke="#0e0e0e" stroke-width="1.3" stroke-linecap="round" />
+                <path d="M45 75 L32 120 M45 75 L58 120" stroke="#0e0e0e" stroke-width="1.5" stroke-linecap="round" />
+                <path d="M32 120 L26 158 M32 120 L40 155" stroke="#0e0e0e" stroke-width="1.2" stroke-linecap="round" />
+                <path d="M58 120 L64 158 M58 120 L50 155" stroke="#0e0e0e" stroke-width="1.2" stroke-linecap="round" />
+            </svg> -->
+<section class="work-section" id="work">
+    <div class="section-header revea">
+        <span class="section-number">02</span>
+        <div class="section-divider"></div>
+        <h2 class="section-title">Selected Work</h2>
+        <span class="section-title-jp" style="color:rgba(236, 100, 100, 0.897)">作品集</span>
+    </div>
+
+
+    <div class="proj-featured revea">
+        <div class="proj-stripe"></div>
+        <div class="proj-featured-media">
+            <div class="canva">
                 <video controls class="vids">
-                    <source src="media/lucid-maze.mp4" type="video/mp4">
+                    <source src="media/wahenga-showcase.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
-            <p><p>Lucid Maze is a 2D side-scrolling platformer, developed during the Women's Game Jam in August 2025 with the theme "Nothing is as it seems." I was part of a 5-member team from Sweden, my primary responsibility was to code the main gameplay, design the levels, add VFX and also implement art, UI, music and sound.</p>
-                </p>
-            <div class="links">
-                <a href="projects/lucid-maze.html" class="read-more">Read More</a>
-                <a href="https://sly-meerket.itch.io/lucid-maze" class="read-more">Play</a>
+        </div>
+        <div class="proj-featured-body">
+            <div class="proj-meta"><span class="proj-type">2D Action</span><span class="proj-engine">Unity 2022
+                    LTS</span><span class="proj-engine">Steam</span></div>
+            <h3 class="proj-title">Wahenga</h3>
+            <p class="proj-desc">A Soulslike with procedurally assembled dungeons and a physics-driven melee system. I
+                owned the player controller, enemy AI, and combat loop from pitch to ship.</p>
+            <div class="contrib-box">
+                <div class="contrib-lbl">🔧 My Contribution</div>
+                <div class="contrib-text">Built a layered state machine decoupling input buffering from animation state
+                    — reduced combat jank reports by 80%. Implemented custom root-motion blending preserving momentum
+                    across attack chains.</div>
             </div>
-        </section>
-        
-        <section class="project">
-            <h2>Train Loop</h2>
-            <div class="video">
-                <video controls class="vids">
-                    <source src="media/TrainLoop.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            <p><p>The game is a 2D blend of platformer and Tetris mechanics, developed during the Women's Game Jam in August 2024 with the theme "Time Loop." As part of a 6-member team, my primary responsibility as a programmer was to implement the main gameplay, which involved writing code for both the character movement and the Tetris game elements.</p>
-                </p>
-            <div class="links">
-                <a href="projects/train-loop.html" class="read-more">Read More</a>
-                <a href="https://vanguard06.itch.io/train-loop" class="read-more">Play</a>
-            </div>
-        </section>
+            <div class="tech-tags"><span class="tag">State Machine</span><span class="tag">Root Motion</span><span
+                    class="tag">IK</span><span class="tag">PCG</span><span class="tag">NavMesh</span><span
+                    class="tag">C# Jobs</span></div>
+            <div class="proj-links"><a href="#" class="proj-link">▶ Play Demo</a><a href="#" class="proj-link">↗
+                    GitHub</a><a href="#" class="proj-link">↗ Steam</a></div>
+        </div>
+    </div>
 
-        <section class="project">
-            <h2>Slimy Runner</h2>
-            <div class="video">
+    <div class="proj-grid2 revea">
+        <div class="proj-card">
+            <div class="proj-stripe"></div>
+            <div class="proj-thumb">
+                <!-- <canvas id="c2"> -->
                 <video controls class="vids">
-                    <source src="media/slimy.mp4" type="video/mp4">
+                    <source src="media/fiery-fynbos.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
+                <!-- </canvas> -->
             </div>
-            <p> The game is a 2.5D web-based and android side-scroller runner game made in Unity and inspired by top titles like<u> Celeste</u> and <u>Hollow Knight</u>, designed to emulate their precise and responsive character movements. 
-                In this exhilarating game, players dash through four uniquely themed environments: silent cottages with streetlights, the serene forest filled with lush greenery and sheep, the treacherous desert with its scorching sun and sandy mountains, and the icy tundra featuring frosty paths.  
-                </p>
-            <div class="links">
-                <a href="projects/slimy.html" class="read-more">Read More</a>
-                <a href="https://muthee-p.itch.io/slimy-runner" class="read-more">Play</a>
-                <a href="https://github.com/muthee-p/slimy_runner" class="read-more">Github</a>
+            <div class="proj-meta"><span class="proj-type">Puzzle</span><span class="proj-engine">Unity
+                    2021</span></div>
+            <h3 class="proj-title">Fiery Fynbos</h3>
+            <p class="proj-desc">Physics-driven mobile platformer with wall-run and gravity-flip. 50K downloads in the
+                first month on iOS & Android.</p>
+            <div class="contrib-box">
+                <div class="contrib-lbl">🔧 My Contribution</div>
+                <div class="contrib-text">Frame-rate-independent physics wrapper with custom gravity vectors. Cut GC
+                    allocations from 4MB/s to under 100KB/s — solved stutter on mid-range Android.</div>
             </div>
-        </section>
-        <section class="project">
-            <h2>Sci-Quest: The Citizen Science Chronicles</h2>
-            <div class="video">
+            <div class="tech-tags"><span class="tag">Rigidbody2D</span><span class="tag">GC Opt.</span><span
+                    class="tag">Addressables</span></div>
+            <div class="proj-links"><a href="#" class="proj-link">▶ Demo</a><a href="#" class="proj-link">↗ GitHub</a>
+            </div>
+        </div>
+
+        <div class="proj-card">
+            <div class="proj-stripe"></div>
+            <div class="proj-thumb">
+                <!-- <canvas id="c3"> -->
                 <video controls class="vids">
                     <source src="media/sciquest.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
+                <!-- </canvas> -->
             </div>
-            <p>
-                As an integral part of the CitSci Africa Association, we developed this mobile game for the March 2024 CitSci Africa conference as a studio. 
-                This project aims to introduce audiences to the fascinating world of citizen science in an engaging and interactive way. 
-                Players embark on virtual quests, solve scientific mysteries, and collect data, all while contributing to real-world research. 
-                </p>
-            
-            <div class="links">
-                <a href="projects/sciquest.html" class="read-more">Read More</a>
-                <a href="https://jiwe.io/games/sciquest-the-citizen-science-chronicles" class="read-more">Download</a>
+            <div class="proj-meta"><span class="proj-type">Mobile Puzzles</span><span class="proj-engine">Unity
+                    Netcode</span></div>
+            <h3 class="proj-title">Sci-Quest: The Citizen Science Chronicles</h3>
+            <p class="proj-desc">This project aims to introduce audiences to the fascinating world of citizen science in an engaging and
+            interactive way.
+            Players embark on virtual quests, solve scientific mysteries, and collect data, all while contributing to
+            real-world research.</p>
+            <div class="contrib-box">
+                <div class="contrib-lbl">🔧 My Contribution</div>
+                <div class="contrib-text">As an integral part of the CitSci Africa Association, we developed this mobile game for the March 2024
+            CitSci Africa conference as a studio.</div>
             </div>
-        </section>
-        
-    </main>
-    <div class="head">
-        <div class="work">
-            <h2 >Other Work Projects</h2>
-            <p>Throughout my career, I have worked on a variety of Unity projects that showcase my expertise in C#. My portfolio includes dynamic games with ach project reflects my commitment to high-quality code, innovative gameplay mechanics, and engaging user interfaces. By collaborating closely with designers and artists, I ensure that every project not only meets technical standards but also delivers an exceptional user experience.</p>
+            <div class="tech-tags"><span class="tag">NGO</span><span class="tag">Prediction</span><span
+                    class="tag">Scriptable Obj.</span></div>
+            <div class="proj-links"><a href="https://jiwe.io/games/sciquest-the-citizen-science-chronicles" class="proj-link">▶ Demo</a><a href="#" class="proj-link">↗ GitHub</a>
+            </div>
         </div>
     </div>
-    
-    
-    <main class="main-second">
-        <section class="project second">
-            <h2>The Greenprint</h2>
-            <div class="video">
-                <video controls class="vids">
-                    <source src="media/greenprint.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            <p>Transform your virtual designs into actionable plans. The Greenprint game serves as a practical tool for creating detailed blueprints that can be implemented to build thriving, sustainable neighborhoods in reality.</p>
-            
-            <div class="links">
-                <a href="projects/greenprint.html" class="read-more">Read More</a>
-                <a href=" https://www.createthegreenprint.com/the-game" class="read-more">Play</a>
-               
-            </div>
-        </section>
-        <section class="project second">
-            <h2>Toguna VR</h2>
-            <div class="video">
-                <video controls class="vids">
-                    <source src="media/toguna.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            <p>The Sanctuary of Dreams is a metaverse multi-user dream world, fusing Art, music, animation and storytelling to support a Future-dreaming ritual through which participants can envision desirable future scenarios guided by their innermost desires.</p>
+</section>
 
-            <div class="links">
-                <a href="projects\toguna.html" class="read-more">Read More</a>
-                <a href="https://jiwe.io/games/toguna-vr" class="read-more">Play</a>
+<!-- GAME JAMS -->
+<section class="work-section" id="work">
+    <div class="section-header revea">
+        <span class="section-number">03</span>
+        <div class="section-divider"></div>
+        <h2 class="section-title">Game Jams</h2>
+        <span class="section-title-jp" style="color:rgba(255,255,255,0.15)">作品集</span>
+    </div>
+
+    <div class="projects-grid">
+        <div class="jam-card revea">
+            <div class="jam-stripe"></div>
+            <div class="jam-thumb"><canvas id="j1"></canvas></div>
+            <span class="project-index">No. 01</span>
+            <p class="project-type">Women's Game Jam - 2025</p>
+            <h3 class="project-title">Lucid Maze</h3>
+            <p class="project-desc">2D side-scrolling platformer, with the theme "Nothing is as it seems."</p>
+
+            <div class="jam-result">2,400+ plays in first 48 hrs</div>
+            <div class="jam-tags"><span class="jam-tag">48hr Solo</span><span class="jam-tag">Shader Graph</span><span
+                    class="jam-tag">Pathfinding</span></div>
+            <div class="jam-links"><a href="https://sly-meerket.itch.io/lucid-maze" class="jam-link">▶ Play</a><a href="#" class="jam-link">↗ Source</a>
             </div>
-        </section>
-    </main>
-    <!-- <div class="head">
-        <div class="work">
-            <h2 >Ongoing Project</h2>
-            <p>These are personal projects that I am continuing working on.</p>
+        </div>
+
+        <div class="jam-card revea">
+            <div class="jam-stripe"></div>
+            <div class="jam-thumb"><canvas id="j1"></canvas></div>
+            <span class="project-index">No. 02</span>
+            <p class="project-type">Women's Game Jam - 2024</p>
+            <h3 class="project-title">Train Loop</h3>
+            <p class="project-desc">A blend of a platformer and Tetris mechanics, developed during the Women's Game Jam in August
+            2024 with the theme "Time Loop."</p>
+
+            <div class="jam-result">2,400+ plays in first 48 hrs</div>
+            <div class="jam-tags"><span class="jam-tag">48hr Solo</span><span class="jam-tag">Shader Graph</span><span
+                    class="jam-tag">Pathfinding</span></div>
+            <div class="jam-links"><a href="https://vanguard06.itch.io/train-loop" class="jam-link">▶ Play</a><a href="#" class="jam-link">↗ Source</a>
+            </div>
+        </div>
+        <div class="jam-card revea">
+            <div class="jam-stripe"></div>
+            <div class="jam-thumb"><canvas id="j1"></canvas></div>
+            <span class="project-index">No. 03</span>
+            <p class="project-type">Brand Identity</p>
+            <h3 class="project-title">Kōen Tea House</h3>
+            <p class="project-desc">Complete visual identity for a minimalist tea ceremony studio in Kyoto, blending
+                tradition with modern retail.</p>
+
+            <div class="jam-result">2,400+ plays in first 48 hrs</div>
+            <div class="jam-tags"><span class="jam-tag">72hr</span><span class="jam-tag">Women In Games</span><span
+                    class="jam-tag">Pathfinding</span></div>
+            <div class="jam-links"><a href="#" class="jam-link">▶ Play</a><a href="#" class="jam-link">↗ Source</a>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+
+<!-- ============================================= Skills ================================================ -->
+<section class="section" id="skills">
+    <div class="section-header revea">
+        <span class="section-number">03</span>
+        <div class="section-divider"></div>
+        <h2 class="section-title">Skills</h2>
+        <span class="section-title-jp">専門技術</span>
+    </div>
+
+    <div class="skills-grid">
+        <div class="skill-group revea reveal-delay-1">
+            <h3>Design</h3>
+            <ul class="skill-list">
+                <li>UI / UX Design</li>
+                <li>Brand Identity</li>
+                <li>Motion Design</li>
+                <li>Typography</li>
+                <li>Art Direction</li>
+            </ul>
+        </div>
+
+        <div class="skill-group revea reveal-delay-2">
+            <h3>Frontend</h3>
+            <ul class="skill-list">
+                <li>React / Next.js</li>
+                <li>TypeScript</li>
+                <li>CSS / Tailwind</li>
+                <li>GSAP / Framer</li>
+                <li>Three.js</li>
+            </ul>
+        </div>
+
+        <div class="skill-group revea reveal-delay-3">
+            <h3>Tools</h3>
+            <ul class="skill-list">
+                <li>Figma</li>
+                <li>After Effects</li>
+                <li>Illustrator</li>
+                <li>Premiere Pro</li>
+                <li>Webflow</li>
+            </ul>
+        </div>
+
+        <div class="skill-group revea reveal-delay-4">
+            <h3>Other</h3>
+            <ul class="skill-list">
+                <li>Node.js</li>
+                <li>Shopify Liquid</li>
+                <li>Accessible Design</li>
+                <li>Photography</li>
+                <li>Copywriting</li>
+            </ul>
         </div>
     </div>
-    <main>
-        <section class="project third">
-            <h2>Mosquito Savannah</h2>
-            <div class="video">
-                <video controls class="vids">
-                    <source src="media/ms.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            <p>In the game, the player's goal is to help reduce Malaria in a nearby village. They test different ponds for mosquito larvae and make larvicide from plants they find. 
-                They also gather plants to make Malaria medicine. Finally, they use a robot to deliver the medicine to the village. Thus reducing Malaria.</p>
-            <div class="links">
-                <a href="projects/savannah.html" class="read-more">Read More</a>
-                <a href="https://muthee-p.itch.io/mosquito-savannah" class="read-more">Play</a>
-                <a href="https://github.com/muthee-p/Mosquito_savannah" class="read-more">Github</a>
-            </div>
-        </section>
-    </main> -->
+</section>
 
-    <footer>
-        <p>© 2024 Prue's Games. All rights reserved.</p>
-    </footer>
+<!-- Contact -->
+<section class="contact-section" id="contact">
+    <div class="contact-grid">
+        <div class="revea">
+            <h2 class="contact-headline">
+                Let's build<br>something <em>beautiful</em><br>together.
+            </h2>
+            <p class="contact-body">Whether you have a project in mind or just want to talk craft, I'm always open to a
+                conversation over (virtual) matcha.</p>
+            <a href="mailto:prudence.n.muthee@gmail.com" class="btn-primary" style="display:inline-flex"><span>Send a
+                    Message</span></a>
+        </div>
 
-</body>
+        <div class="contact-links revea reveal-delay-2">
+            <a href="mailto:prudence.n.muthee@gmail.com" class="contact-link">
+                <span class="contact-link-icon">✉</span>
+                <div class="contact-link-text">
+                    <span class="link-label">Email</span>
+                    <span class="link-value">prudence.n.muthee@gmail.com</span>
+                </div>
+            </a>
+            <a href="https://ke.linkedin.com/in/muthee-p" class="contact-link">
+                <span class="contact-link-icon">◈</span>
+                <div class="contact-link-text">
+                    <span class="link-label">LinkedIn</span>
+                    <span class="link-value">linkedin.com/in/muthee-p</span>
+                </div>
+            </a>
+            <a href="https://github.com/muthee-p" class="contact-link">
+                <span class="contact-link-icon">⬡</span>
+                <div class="contact-link-text">
+                    <span class="link-label">GitHub</span>
+                    <span class="link-value">github.com/muthee-p</span>
+                </div>
+            </a>
+            <a href="https://muthee-p.itch.io/" class="contact-link">
+                <span class="contact-link-icon">◉</span>
+                <div class="contact-link-text">
+                    <span class="link-label">Itch IO</span>
+                    <span class="link-value">muthee-p.itch.io</span>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <span class="footer-logo">田中 幸</span>
+    <span class="footer-jp">美・技・心</span>
+    <span class="footer-copy">© 2024 Yuki Tanaka. All rights reserved.</span>
+</footer>
+
 </html>
