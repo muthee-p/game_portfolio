@@ -104,7 +104,7 @@ nav {
 }
 
 .nav-logo::before {
-  content: '田';
+  content: '一';
   font-size: 14px;
   color: var(--vermillion);
   border: 1px solid var(--vermillion);
@@ -393,12 +393,13 @@ nav {
 .brush-line {
   position: absolute;
   bottom: 60px;
-  left: -20px;
-  width: 120%;
+  left: 0;
+  width: 100%;
   height: 3px;
   background: linear-gradient(to right, var(--vermillion), transparent);
   transform: skewX(-8deg);
   opacity: 0.3;
+  pointer-events: none;
 }
 
 .scroll-indicator {
@@ -589,6 +590,48 @@ nav {
   padding-right: 20px;
 }
 
+/* ==================================== Jams ============================================*/
+
+.jams-section {
+  background: var(--ink);
+  padding: 120px 56px 120px 152px;
+  position: relative;
+  z-index: 1;
+}
+
+.jams-section .section-title {
+  color: var(--washi);
+}
+
+.jams-section .section-number {
+  color: var(--vermillion);
+}
+
+.jams-section .section-divider {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.15) 0%, transparent 60%);
+}
+
+.jams-section .section-title-jp {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+/* Sakura pattern on dark */
+.jams-section::before {
+  content: 'Game Jams';
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: 'Shippori Mincho', serif;
+  font-size: 200px;
+  letter-spacing: -0.05em;
+  color: rgba(255, 255, 255, 0.02);
+  line-height: 1;
+  pointer-events: none;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-right: 20px;
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -757,7 +800,7 @@ nav {
 }
 
 .contact-section::after {
-  content: '連絡';
+  content: 'PNM';
   position: absolute;
   bottom: -40px;
   right: 60px;
@@ -1434,3 +1477,11 @@ section:nth-child(even) {
   margin-top: 48px;
   margin-bottom: 24px;
 }
+
+
+
+
+
+
+
+
