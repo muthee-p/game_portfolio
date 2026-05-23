@@ -1153,6 +1153,10 @@
       background: rgba(255, 255, 255, 0.055);
   }
 
+  .jam-card a {
+      text-decoration: none;
+  }
+
   .jam-stripe {
       position: absolute;
       top: 0;
