@@ -752,9 +752,9 @@ nav {
 
 /* ===================== SKILLS ===================== */
 .skills-grid {
-  display: grid;
+   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
+  gap: 68px;
 }
 .skillss-grid {
   display: grid;
@@ -770,7 +770,7 @@ nav {
 
 .skill-group h3 {
   font-family: 'Shippori Mincho', serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   color: var(--ink);
   margin-bottom: 20px;
@@ -797,10 +797,10 @@ nav {
 }
 
 .skill-list li {
-  font-size: 13px;
+  font-size: 15px;
+  line-height: 1.9;
   color: var(--mist);
   display: flex;
-  align-items: center;
   gap: 10px;
   transition: color 0.3s;
 }
