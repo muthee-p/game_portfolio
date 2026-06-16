@@ -259,7 +259,7 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .skills-grid {
+    .skills-grid, .skillss-grid, .education-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 32px;
     }
@@ -309,7 +309,7 @@
         margin-bottom: 24px;
     }
 
-    .skills-grid {
+    .skills-grid, .skillss-grid, .education-grid {
         grid-template-columns: 1fr;
         gap: 40px;
     }

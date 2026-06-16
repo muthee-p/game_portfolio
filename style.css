@@ -503,6 +503,21 @@ nav {
   background: var(--stone);
   border: 1px solid var(--stone);
 }
+.about-grid::before {
+  content: 'About';
+  position: absolute;
+  top: 40px;
+  right: 0;
+  font-family: 'Shippori Mincho', serif;
+  font-size: 150px;
+  letter-spacing: -0.05em;
+  color: rgba(236, 100, 100, 0.075);
+  line-height: 1;
+  pointer-events: none;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-right: 20px;
+}
 
 .stat-item {
   background: var(--washi);
@@ -575,14 +590,14 @@ nav {
 
 /* Sakura pattern on dark */
 .work-section::before {
-  content: 'Game Jams';
+  content: 'Projects';
   position: absolute;
-  top: 0;
+  top: 40px;
   right: 0;
   font-family: 'Shippori Mincho', serif;
-  font-size: 200px;
+  font-size: 150px;
   letter-spacing: -0.05em;
-  color: rgba(255, 255, 255, 0.02);
+  color: rgba(0, 0, 0, 0.02);
   line-height: 1;
   pointer-events: none;
   overflow: hidden;
@@ -617,12 +632,12 @@ nav {
 
 /* Sakura pattern on dark */
 .jams-section::before {
-  content: 'Game Jams';
+  content: 'HTML5';
   position: absolute;
-  top: 0;
+  top: 40px;
   right: 0;
   font-family: 'Shippori Mincho', serif;
-  font-size: 200px;
+  font-size: 150px;
   letter-spacing: -0.05em;
   color: rgba(255, 255, 255, 0.02);
   line-height: 1;
@@ -738,7 +753,18 @@ nav {
 /* ===================== SKILLS ===================== */
 .skills-grid {
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.skillss-grid {
+  display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
 
@@ -788,6 +814,37 @@ nav {
   color: var(--vermillion);
   font-family: 'Shippori Mincho', serif;
   font-size: 10px;
+}
+.skills-grid::before {
+  content: 'Work';
+  position: absolute;
+  top: 40px;
+  right: 0;
+  font-family: 'Shippori Mincho', serif;
+  font-size: 150px;
+  letter-spacing: -0.05em;
+  color: rgba(0, 0, 0, 0.025);
+  line-height: 1;
+  pointer-events: none;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-right: 20px;
+}
+
+.education-grid::before {
+  content: 'Studies';
+  position: absolute;
+  top: 40px;
+  right: 0;
+  font-family: 'Shippori Mincho', serif;
+  font-size: 150px;
+  letter-spacing: -0.05em;
+  color: rgba(236, 100, 100, 0.075);
+  line-height: 1;
+  pointer-events: none;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-right: 20px;
 }
 
 /* ===================== CONTACT ===================== */
@@ -1479,8 +1536,29 @@ section:nth-child(even) {
 }
 
 
-
-
+.html-jam-divider {
+  width: 100%;
+  height: 1px;
+  background: var(--red);
+  margin: 68px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.html-jam-divider::before {
+  content: 'Game Jams';
+  
+  top: 0;
+  right: 0;
+  font-family: 'Shippori Mincho', serif;
+  font-size: 200px;
+  letter-spacing: -0.05em;
+  color: rgba(255, 255, 255, 0.02);
+  line-height: 1;
+  pointer-events: none;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-right: 20px;
+}
 
 
 
